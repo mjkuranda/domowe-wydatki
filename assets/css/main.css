@@ -1,0 +1,6 @@
+h1 { padding: 80px 0; }
+h2 { padding: 40px 0; }
+main { padding: 20px 0; }
+main section { margin: 0 50px; }
+main section p:first-line { text-indent: 50px; }
+#credits > div { padding: 10px 0; }

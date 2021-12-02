@@ -1,0 +1,37 @@
+section.form-bottom button + button {
+    margin: 40px 0 40px 20px;
+}
+
+/* When this section contains some information */
+section.form-info.form-info-notempty {
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+
+
+
+
+section.form-datas > fieldset {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+section.form-datas div.flex-center > div {
+    width: 50%;
+}
+
+section.form-datas div.flex-center > div+div {
+    margin-left: 20px;
+}
+
+
+main h1 { margin: 40px 0 60px 0; }
+main h1 > p { text-decoration: underline; }
+main h1 > strong { font-style: oblique; }
+
+
+.__correct { background-color: #00BA00; }
+.__wrong { background-color: #BA0000; }
+
+legend { text-align: center; }

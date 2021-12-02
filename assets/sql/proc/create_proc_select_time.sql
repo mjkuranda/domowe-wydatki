@@ -1,0 +1,3 @@
+CREATE PROCEDURE proc_select_time
+AS
+	SELECT SYSDATETIME();

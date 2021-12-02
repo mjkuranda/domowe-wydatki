@@ -1,0 +1,48 @@
+{
+    "Osoby": [
+        "Nr",
+        "Imię",
+        "Nazwisko"
+    ],
+    "Sklepy": [
+        "Nr",
+        "Nazwa",
+        "Adres",
+        "Kod pocztowy",
+        "Miasto",
+        "Telefon"
+    ],
+    "Kategorie": [
+        "Nr",
+        "Nazwa Kategorii"
+    ],
+    "Wydatki": [
+        "Nr",
+        "Kategoria",
+        "Osoba",
+        "Sklep",
+        "Data",
+        "Kwota",
+        "Opis"
+    ],
+    "Logi": [
+        "Nr",
+        "Użytkownik",
+        "Data",
+        "Opis"
+    ],
+    "Zasady": [
+        "Nr",
+        "Nazwa",
+        "Opis"
+    ],
+    "Uprawnienia": [
+        "Nazwa użytkownika",
+        "Nazwa zasady"
+    ],
+    "Użytkownicy": [
+        "Nr",
+        "Nazwa użytkownika",
+        "Osoba"
+    ]
+}

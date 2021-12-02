@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+button, input, select, textarea {
+    outline: none;
+}
+
+button { cursor: pointer; }
+
+.button-normal {
+    width: 200px;
+    height: 30px;
+    border-bottom: 4px solid white;
+}
+
+.hidden { display: none; }
+
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .flex-around {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+.center {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.web-border {
+    width: 100%;
+    min-height: 20px;
+}
+
+
+
+.element-error {
+    padding: 40px 0;
+}
+
+.cut-string {
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+
+
+svg#settings,
+svg#pen,
+svg#delete,
+svg#selection,
+svg#trash { width: 16px; height: 16px; margin-right: 2px; transition: opacity 500ms; opacity: 1; }
+svg#settings:hover,
+svg#pen:hover,
+svg#delete:hover,
+svg#selection:hover,
+svg#trash:hover { transition: opacity 500ms; opacity: .5; cursor: pointer; }
+
+
+
+/*basic responsive */
+@media all and (max-width: 1100px) {
+    .center { width: auto; }
+}
+
+
+
+
+form fieldset div.flex-center > div+div {
+    margin-left: 20px;
+}
+form fieldset div.flex-center > div {
+    width: 50%;
+}
+
+fieldset { min-width: 500px; margin: 10px; padding: 10px; }
+legend { text-align: center; }
+
+select, input { width: 200px; }
+
+
+
+.form-info { padding-bottom: 20px; }
+
+.available { fill: green; }
+.non-available { fill: red; }

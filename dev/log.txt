@@ -1,0 +1,171 @@
+--------------------------------------------- Log - Domowe Wydatki ---------------------------------------------
+
+# 2020-12-17
+    - stworzenie podstaw: import bazy, ustanowienie połączenia z serwerem, plik index.php
+
+# 2020-12-18
+    - utworzenie "szablonu", drzewa katalogów
+    - dodanie bibliotek jquery oraz jquery-cookies
+    - stworzenie systemu koloru palet:
+        * plik .json z paletami zawiera kilka palet, a każda z nich kolory
+        * plik cookie przechowuje numer używanej palety
+    - zmiana wyglądu pliku index.php
+    - dodanie pliku błędu nieznalezienia podstrony (error404)
+
+# 2020-12-28
+    - stworzenie systemu podstron
+    - dodanie pliku .htaccess
+
+# 2020-12-29
+    - stworzenie pliku, który pobiera czas z serwera
+    - stworzenie widoku dla wszystkich osób
+    - stworzenie procedur:
+        * dodania nowej osoby
+        * wybrania czasu z serwera
+    - stylizacja nagłówka i stopki
+
+# 2020-12-30
+    - dodanie pliku report.php, gdzie będą znajdować się wszystkie raporty
+    - stworzenie systemu raportów (w adresie strony umieszczone zmienne: jaka tabela)
+    - wyświetlanie kolorowych komunikatów w konsoli od "systemu"
+    - wyświetlanie wszystkich osób
+
+# 2020-12-31
+    - dodanie kilku klas w pliku basic.css
+    - drobne modyfikacje w projekcie
+
+# 2021-01-01
+    - dodanie form.php, gdzie będą znajdować się formularze
+    - stworzenie systemu formularzy
+    - ostylowanie formularzy
+    - dodanie pliku form.json, który przechowuje dane dotyczące formularzy
+
+# 2021-01-11
+    - poprawienie błędu kodowania polskich znaków
+    - zmiana wyglądu formularzy
+    - dodanie panelu nawigacyjnego
+    - panel jest rowijalny
+    - można ładować różne formularze i raporty
+    - poprawienie systemu paginacji
+    - zmiana w wyświetlaniu formularzy i raportów
+    - poprawny format daty wyświetlany w raportach dla wydatków
+
+# 2021-01-13
+    - dodanie nowych procedur, które dodają rekordy dla osób, kategorii i sklepów.
+    - działania wyświetlane tylko dla tabeli "Osoby".
+    - dodanie formularza dla tabel: Sklepy oraz Kategorie.
+    - używanie widoków dla raportów: Kategorie, Osoby, Wydatki oraz Sklepy.
+    - zmiana w tabeli dla widoków: od teraz nie wyświetlają się klucze dla pól, lecz odnośniki w innych tabelach.
+    - zmieniono format wyświetlania daty oraz kwoty.
+    - dodanie procedury, która usuwa rekord o danym numerze z dowolnej tabeli.
+    - dodanie wyrażeń regularnych dla pól w tabelach: Osoby, Kategorie, Sklepy.
+
+# 2021-01-14
+    - od teraz możliwość dodawania nowych rekordów dla: Sklepy, Kategorie oraz Osoby.
+    - ostylowanie niektórych elementów w formularzach oraz dodanie nagłówka.
+    - dodanie nagłówka dla raportów.
+    - lekka stylizacja raportów.
+    - dodanie odnośnika do ustawień strony.
+    - dodanie podstrony ustawienia.
+    - ładowanie ustawień.
+    - system generowania kolorów dla czcionki.
+    - svg otrzymują kolor taki sam jak czcionka.
+
+# 2021-01-15
+    - automatyczne dodawanie atrybutów dla obiektów w formularzu.
+    - automatyczne pobieranie danych z formularzy! (some great piece of work ;D)
+    - dodawanie w pełni poprawne nowych rekordów.
+    - wyśrodkowanie tagów "legend".
+
+# 2021-01-16
+    - utworzenie nowej tabeli: "Użytkownicy", wraz z użytkownika, dla każdej osoby.
+    - użytkownik Admin o haśle: 'Admin'.
+    - od teraz tworzony jest plik cookie, dla użytkownika.
+    - rejestracja użytkowników.
+    -* logowanie użytkowników.
+    - kwerenda dla osób, które nie mają konta.
+    - procedura dodawania nowego użytkownika.
+    - utworzenie widoku dla użytkowników.
+    - funkcja zwracająca numer użytkownika.
+
+# 2021-01-18
+    - system logowania w pełni działający.
+    - funkcja zwracająca nazwę użytkownika po numerze.
+
+# 2021-01-19
+    - dodawanie tabelki logów.
+    - raport dla logów.
+    - widok dla logów.
+    - dodanie tabelki: Zasady, oraz 6-ciu zasad.
+    - dodanie tabelki: Wprawnienia oraz jednego rekordu.
+    - nowy przycisk w pasku nawigacyjnym: Administracja.
+
+# 2021-01-20
+    - dodanie kwerendy zwracającej nazwę użytkownika po numerze.
+    - przy wylogowaniu dołączana nazwa użytkownika, wykonywującego ową akcję.
+    - dodanie widoku dla wszystkich Zasad.
+    - dodanie widoku dla wszystkich Uprawnień.
+    - dodanie logów przy dodawaniu nowych rekordów.
+    - ikonka dodawania, modyfikacji i usuwania rekordów.
+    - dodano funkcję sprawdzającą zasady.
+    - dodano funkcję sprawdzającą, czy dany użytkownik posiada daną zasadę.
+    - wyświetlane są ikonki działań.
+    - formularze dostępne tylko dla zalogowanych.
+    - przenoszenie do podstrony logowania dla niezalogowanych.
+    - kolumna "Działania" również przy innych tabelach, ale tylko dla zalogowanych z odpowiednimi uprawnieniami.
+    - działa przeglądanie uprawnień i zasad dla administratorów.
+
+# 2021-01-21
+    - naprawienie błędu procedury paginacji.
+    - dodanie actions.json.
+
+# 2021-01-22
+    - zmiana walidacji w sklepach.
+    - dodano system aktualizacji.
+    - drobne zmiany w podstronie form > update.
+    - dodano dla każdej linijki w raporcie wartość klucza.
+    - funkcja usuwania w manager.js.
+    - nie istnieje np. przycisk modyfikacji dla zasad przy raportach: tylko usuwanie lub dodawanie,
+        a każdy przycisk ma przypisaną klasę. Klasa jest powiązana z metodą. JS
+
+# 2021-01-23
+    - mała poprawka w podstronie update.
+    - dodanie procedury aktualizującej.
+    - tworzenie napisu query przy aktualizacji.
+    - dodawanie zasad przy rejestracji.
+    - dodanie kwerendy, która wybiera tylko osoby bez kont.
+    - tabela użytkowników dla admina.
+    - system usuwania rekordów.
+    - nie można usunąć konta admina.
+    - dodanie podstrony 'main' wraz ze stylami i zawartością.
+    - dodanie przycisku uprawnienia.
+    - stworzoną funkcję zwracającą niepasujące zasadY! uff... iloczyn kartezjański pomógł :P
+    - usuwanie działa!
+    - dodawanie nowych zasad również.
+    - Komunikat przy usuwaniu.
+
+# 2021-01-25
+    - wyskakuje komunikat błędu przy błędnym logowaniu.
+    - czyszczenie hasła w formularzu przy logowaniu.
+    - nie działa dodawanie użytkowników :(  - repaired
+    - niedziałają selekty w wydatkach :P    - repaired
+    - admin nie może usuwać swoich uprawnień, ani nikt inny jemu.
+    - trzeba mieć prawa "Administracji", by móc odbierać prawa.
+    - jeżeli wejdziesz na podstronę dodawania uprawnień, nie mając "Administracji", zostajesz przeniesiony do głównej strony.
+    - formularze działają.
+    - wydatki działają.
+    - wdrożenie działania zasad.
+
+# 2021-01-26
+    -dokończyć update'y.
+
+# 2021-01-29
+    - poprawnie wyświetlają się numery stron.
+    - nazwy użytkowników nie mogą się powtarzać.
+
+Settings <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Pen <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Delete <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Selecting <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Checked <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Trash <div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

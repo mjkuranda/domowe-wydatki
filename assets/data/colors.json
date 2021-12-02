@@ -1,0 +1,36 @@
+{
+	"palettes": [
+		[
+			{"hex": "4C4C4C"},
+			{"hex": "636363"},
+			{"hex": "85C7F2"},
+			{"hex": "DBDBDB"},
+			{"hex": "D1D1D1"}
+		],
+		[
+			{"hex": "FF6B35"},
+			{"hex": "F7C59F"},
+			{"hex": "EFEFD0"},
+			{"hex": "004E89"},
+			{"hex": "1A659E"}
+		],
+		[
+			{"hex": "1F363D"},
+			{"hex": "40798C"},
+			{"hex": "70A9A1"},
+			{"hex": "9EC1A3"},
+			{"hex": "CFE0C3"}
+		],
+		[
+			{"hex": "000000"},
+			{"hex": "363946"},
+			{"hex": "696773"},
+			{"hex": "819595"},
+			{"hex": "B1B6A6"}
+		]
+	],
+	"source": "https://coolors.co/",
+	"created": "2020-12-18",
+	"modified": "2020-12-28",
+	"author": "Marek Kurańda"
+}

@@ -1,0 +1,42 @@
+{
+    "Osoby": {
+        "pen": true,
+        "delete": true,
+        "selection": false
+    },
+    "Sklepy": {
+        "pen": true,
+        "delete": true,
+        "selection": false
+    },
+    "Kategorie": {
+        "pen": true,
+        "delete": true,
+        "selection": false
+    },
+    "Wydatki": {
+        "pen": true,
+        "delete": true,
+        "selection": false
+    },
+    "Logi": {
+        "pen": false,
+        "delete": true,
+        "selection": false
+    },
+    "Zasady": {
+        "pen": false,
+        "delete": false,
+        "selection": false
+    },
+    "Uprawnienia": {
+        "pen": false,
+        "delete": true,
+        "selection": false
+    },
+    "Użytkownicy": {
+        "pen": false,
+        "delete": true,
+        "selection": false
+    }
+}

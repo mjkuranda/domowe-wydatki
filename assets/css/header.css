@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    padding: 4px 0;
+}
+
+header > div > .sec-user svg {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+/* each tile in the panel */
+nav > div > p,
+nav > div > ul li {
+    padding: 4px;
+    min-width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+nav > div > p {
+    border: 4px groove #aaaaaa;
+    background-color: #aaaaaa55;
+}
+nav > div > ul {
+    border: 4px groove #bbbbbb;
+    background-color: #bbbbbb;
+}
+nav > div > p:hover {
+    border: 4px outset #aaaaaa;
+    background-color: #aaaaaaaa;
+}
+nav > div > ul li:hover {
+    background-color: #ddddddaa;
+}
+nav > div > ul { position: absolute; }
+
+
+/* Responsive */
+@media all and (max-width: 1100px) {
+    nav {
+        display: block;
+    }
+}

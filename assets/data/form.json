@@ -1,0 +1,60 @@
+{
+    "Osoby": {
+        "elements": [
+            {"tag": "input", "type": "text", "name": "Imię", "value": "", "pattern": "^[A-ZĘÓĄŚŁŻŹĆŃ][a-zA-Zęóąśłżźćń']{1,29}$"},
+            {"tag": "input", "type": "text", "name": "Nazwisko", "value": "", "pattern": "^[A-ZĘÓĄŚŁŻŹĆŃ][a-zA-Zęóąśłżźćń']{1,29}$"}
+        ],
+        "select": []
+    },
+    "Kategorie": {
+        "elements": [
+            {"tag": "input", "type": "text", "name": "Nazwa kategorii", "value": "", "pattern": "^[A-ZĘÓĄŚŁŻŹĆŃ]{1}.{1,48}$"}
+        ],
+        "select": []
+    },
+    "Sklepy": {
+        "elements": [
+            {"tag": "input", "type": "text", "name": "Nazwa", "value": "", "pattern": "^.{3,50}$"},
+            {"tag": "input", "type": "text", "name": "Adres", "value": "", "pattern": "^.{3,50}$"},
+            {"tag": "input", "type": "text", "name": "Kod pocztowy", "value": "", "pattern": "^[0-9]{2}-[0-9]{3}$", "placeholder": "00-000"},
+            {"tag": "input", "type": "text", "name": "Miasto", "value": "", "pattern": "^[A-ZĘÓĄŚŁŻŹĆŃ][a-zA-Zęóąśłżźćń']{1,49}$"},
+            {"tag": "input", "type": "text", "name": "Telefon", "value": "", "pattern": "^[(]{1}[0-9]{2}[)]{1}[0-9]{6}$", "placeholder": "(00)000000"}
+        ],
+        "select": []
+    },
+    "Wydatki": {
+        "elements": [
+            {"tag": "select", "name": "Kategoria", "value": "", "id": "Kategorie"},
+            {"tag": "select", "name": "Osoba", "value": "",  "id": "Osoby"},
+            {"tag": "select", "name": "Sklep", "value": "",  "id": "Sklepy"},
+            {"tag": "input", "type": "date", "name": "Data", "value": "", "required": ""},
+            {"tag": "input", "type": "number", "step": "0.01", "name": "Kwota", "value": "0.01", "min": "0.01", "max": "999999.99"},
+            {"tag": "textarea", "name": "Opis", "value": "", "cols": "20", "rows": "4", "style": "resize: none;", "pattern": "^.{1,79}$", "required": ""}
+        ],
+        "select": [
+            "Kategorie",
+            "Osoby",
+            "Sklepy"
+        ]
+    },
+    "Użytkownicy": {
+        "elements": [
+            {"tag": "input", "type": "text", "name": "Nazwa użytkownika", "value": "", "pattern": "^[a-zA-Z']{3,30}$"},
+            {"tag": "select", "name": "Osoba", "value": "", "id": "Osoby"},
+            {"tag": "input", "type": "password", "name": "Hasło", "value": "", "pattern": "^[a-zA-Z0-9!@#$]{8,32}$"}
+        ],
+        "select": [
+            "Osoby"
+        ]
+    },
+    "Uprawnienia": {
+        "elements": [
+            {"tag": "select", "name": "Użytkownik", "value": "", "id": "Użytkownicy"},
+            {"tag": "select", "name": "Zasada", "value": "", "id": "Zasady_Niepasujące"}
+        ],
+        "select": [
+            "Użytkownicy",
+            "Zasady"
+        ]
+    }
+}

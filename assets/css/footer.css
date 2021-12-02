@@ -1,0 +1,7 @@
+footer {
+    width: 100%;
+}
+
+footer > div.flex-center {
+    padding: 10px 0;
+}

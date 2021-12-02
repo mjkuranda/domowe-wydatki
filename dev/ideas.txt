@@ -1,0 +1,5 @@
+;; My ideas ;D
+
+- wybor koloru palet
+- raporty (w url: ilosc rekordow na jednej stronie oraz strona paginacji)
+- formularze dla kazdej tabelki procz wydatkow

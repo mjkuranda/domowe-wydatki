@@ -1,0 +1,50 @@
+main > div:first-child > div { width: 100%; }
+
+main h1 { margin: 40px 0 40px 0; }
+main h1 > p { text-decoration: underline; }
+main h1 > strong { font-style: oblique; }
+
+
+
+.__table-report {
+    width: 90%;
+    margin: 20px 0;
+    border: 2px outset white;
+    border-right: 4px outset white;
+    border-bottom: 4px outset white;
+}
+
+/* id */
+.__table-report .__table-tr-id {
+    width: 50px;
+}
+
+
+
+.__panel-report-container {
+    padding-bottom: 10px;
+}
+
+.__panel-report-container > div + div {
+    margin-left: 20px;
+}
+
+.__panel-report-text {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.__panel-report {
+    border: 2px solid white;
+    border-bottom: 6px outset white;
+    padding: 5px;
+}
+
+.__panel-report div {
+    cursor: pointer;
+}
+
+.__panel-report :not(:first-child)::before {
+    content: "| ";
+    margin-left: 5px;
+}

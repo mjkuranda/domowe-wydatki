@@ -1,0 +1,27 @@
+{
+    "settings": {
+        "font-family": [
+            "Arial",
+            "Calibri",
+            "Century",
+            "Consolas",
+            "Comis Sans MS",
+            "Constantia",
+            "Cooper Black",
+            "Times New Roman"
+        ],
+        "font-color": [
+            "#000000",
+            "#777777",
+            "#FFFFFF",
+            "#770000",
+            "#007700",
+            "#000077",
+            "#FF0000",
+            "#00FF00",
+            "#0000FF"
+        ]
+    },
+    "author": "Marek Kurańda",
+    "creation-date": "2021-01-14"
+}
